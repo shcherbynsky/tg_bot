@@ -1,7 +1,7 @@
 
 const TelegramBot = require('node-telegram-bot-api');
-// const express = require('express');
-// const path = require('path');
+const express = require('express');
+const path = require('path');
 
 
 
@@ -113,14 +113,14 @@ start()
 
 
 
-// const app = express();
-// const PORT = process.env.PORT || 8000;
+const app = express();
+const PORT = process.env.PORT || 8000;
 
-// app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'client')));
 
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port ${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 
     // const photoPath = path.join(__dirname, 'assets', 'd07e8d11-1233-4487-b689-a4e088d344f3.jpeg');
