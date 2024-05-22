@@ -97,3 +97,5 @@ bot.onText(/\/start/, async (msg) => {
         }
     });
 });
+
+export default bot
