@@ -64,7 +64,7 @@ const  botFc = () => {
                       inline_keyboard: [
                           [
                               // Large button spanning two columns
-                              { text: 'Large Button', callback_data: 'large_button', columns: 2,url: 'https://example.com/large_button' }
+                              { text: 'Large Button',web_app: {url: 'https://next-test-ten-pied.vercel.app/'} }
                           ],
                           [
                               // Two buttons in two columns
