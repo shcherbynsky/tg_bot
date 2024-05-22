@@ -1,7 +1,4 @@
-
 const TelegramBot = require('node-telegram-bot-api');
-const express = require('express');
-const path = require('path');
 
 
 const token = '7110280615:AAE09S5NgZBmCyMIxLJ3DeRZpW36agPdDMk';
@@ -99,16 +96,4 @@ bot.onText(/\/start/, async (msg) => {
           });
         }
     });
-});
-
-
-
-
-const app = express();
-const PORT = process.env.PORT || 8000;
-
-app.use(express.static(path.join(__dirname, 'client')));
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
 });
