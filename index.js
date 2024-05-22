@@ -4,7 +4,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '7110280615:AAE09S5NgZBmCyMIxLJ3DeRZpW36agPdDMk';
 
 
-
+const  botFc = () => {
   
   const bot = new TelegramBot(token, { polling: true });
 
@@ -101,4 +101,7 @@ const token = '7110280615:AAE09S5NgZBmCyMIxLJ3DeRZpW36agPdDMk';
           }
       });
   });
+
+}
+botFc()
 
