@@ -103,5 +103,5 @@ const  botFc = () => {
   });
 
 }
-
+botFc()
 export default botFc
