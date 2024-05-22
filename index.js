@@ -2,11 +2,11 @@ const TelegramBot = require('node-telegram-bot-api');
 
 
 const token = '7110280615:AAE09S5NgZBmCyMIxLJ3DeRZpW36agPdDMk';
-const bot = new TelegramBot(token, { polling: true });
 
 
 const  botFc = () => {
-
+  
+  const bot = new TelegramBot(token, { polling: true });
 
   bot.on('polling_error', (error) => {
     console.error('Polling error:', error);  // Логування помилки
